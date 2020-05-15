@@ -6,12 +6,12 @@
 
 ;(def app-config {:kafka-host (System/getenv "KAFKA_HOST")   ;;pkc-4yyd6.us-east1.gcp.confluent.cloud:9092
 ;                 :kafka-user (System/getenv "KAFKA_USER")   ;; CQIRWTCHFOXX6IDK
-;                 :kafka-password (System/getenv "KAFKA_PASSWORD") ;; pcFTnyiElWN4VlgBzzty5HN2PEYo8iHxt3SuEjRSES2IOKI5Ao6xmind/1y675v6
+;                 :kafka-password (System/getenv "KAFKA_PASSWORD") 
 ;                 :kafka-topic (System/getenv "CLINVAR_SCV_TOPIC")}) ;; test
 
 (def app-config {:kafka-host     "pkc-4yyd6.us-east1.gcp.confluent.cloud:9092"
                  :kafka-user     "CQIRWTCHFOXX6IDK"
-                 :kafka-password "pcFTnyiElWN4VlgBzzty5HN2PEYo8iHxt3SuEjRSES2IOKI5Ao6xmind/1y675v6"
+                 :kafka-password "<secret here>"
                  :kafka-producer-topic    "test"
                  :kafka-consumer-topic    "broad_dsp_clinvar"})
 
